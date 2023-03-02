@@ -10,6 +10,8 @@ class Main {
 
         System.out.println("== 명언 앱 ==");
 
+        int lastId = 0;
+
         while (true) {
             System.out.printf("명령) ");
             cmd = sc.nextLine().trim();
@@ -22,7 +24,8 @@ class Main {
             quote = sc.nextLine().trim();
             System.out.printf("작가 : ");
             author = sc.nextLine().trim();
-            System.out.println("1번 명언이 등록되었습니다.");
+            int id = ++lastId;
+            System.out.println(id + "번 명언이 등록되었습니다.");
 
         }
 
